@@ -120,8 +120,12 @@ export default {
   height: 60%;
   padding-top: 16px;
 }
-
+.class-title{
+  text-shadow: 1px 1px 1px rgb(0,0,0,0.5);
+}
 .class-login-form-box {
+  padding: 0 20px;
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
   .class-login-form-parent {
     .class-login-form {
       .class-register-forget-password {
