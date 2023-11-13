@@ -1,98 +1,106 @@
 <template>
-  <el-row justify="center" class="class-logo-title-parent">
-    <img class="class-logo" src="@/assets/logo.jpg" alt="">
-    <h1 class="class-title">
-      博函后台管理系统
-    </h1>
-  </el-row>
-  <el-row justify="center">
-    <el-col class="class-login-form-box" :span="7">
-      <el-row class="class-login-form-parent" justify="center">
-        <!--        表单上方title-->
-        <el-col class="class-login-form-title">
-          <h2>账号登陆</h2>
-        </el-col>
-        <!--        登陆表单-->
-        <el-col class="class-login-form">
-          <!--          注：ref 和 model 名字不能一样 否则输入框无法输入-->
-          <el-form
-            ref="loginFormRef" :model="loginForm" :rules="rules"
-            size="large"
-          >
-            <!--            账号-->
-            <el-form-item prop="accountNumber">
-              <el-input
-                v-model="loginForm.accountNumber" autocomplete="off" :prefix-icon="iconList.User"
-                placeholder="请输入账号"
-              />
-            </el-form-item>
-            <!--            密码-->
-            <el-form-item prop="password">
-              <el-input
-                v-model="loginForm.password" type="password" autocomplete="off"
-                :prefix-icon="iconList.Lock"
-                placeholder="请输入密码"
-              />
-            </el-form-item>
-            <el-row>
-              <el-col :span="12">
-                <!--            验证码-->
-                <el-form-item prop="verificationCode">
-                  <el-input
-                    v-model="loginForm.verificationCode" autocomplete="off" :prefix-icon="iconList.Magnet"
-                    placeholder="请输入验证码"
-                  />
-                </el-form-item>
-              </el-col>
-              <el-col :span="11" :offset="1">
-                <!--            验证码-->
-                <VerificationCode
-                  :refresh-img-code="loginForm.refreshImgCode" @click="debounceChangeImageCode"
-                  @getCode="backImageCode"
+  <div class="class-login-box">
+    <el-row justify="center" class="class-logo-title-parent">
+      <img class="class-logo" src="@/assets/logo.jpg" alt="" />
+      <h1 class="class-title">博函后台管理系统</h1>
+    </el-row>
+    <el-row justify="center">
+      <div class="class-login-form-box">
+        <el-row class="class-login-form-parent" justify="center">
+          <!--        表单上方title-->
+          <el-col class="class-login-form-title">
+            <h2>账号登陆</h2>
+          </el-col>
+          <!--        登陆表单-->
+          <el-col class="class-login-form">
+            <!--          注：ref 和 model 名字不能一样 否则输入框无法输入-->
+            <el-form
+              ref="loginFormRef"
+              :model="loginForm"
+              :rules="rules"
+              size="large"
+            >
+              <!--            账号-->
+              <el-form-item prop="accountNumber">
+                <el-input
+                  v-model="loginForm.accountNumber"
+                  autocomplete="off"
+                  :prefix-icon="iconList.User"
+                  placeholder="请输入账号"
                 />
-              </el-col>
-            </el-row>
-
-            <!--        注册 忘记密码-->
-            <el-form-item>
-              <el-row class="class-register-forget-password">
-                <!--                注册-->
-                <el-col class="class-register" :span="12">
-                  <el-button type="primary" link @click="clickRegister">
-                    注册
-                  </el-button>
+              </el-form-item>
+              <!--            密码-->
+              <el-form-item prop="password">
+                <el-input
+                  v-model="loginForm.password"
+                  type="password"
+                  autocomplete="off"
+                  :prefix-icon="iconList.Lock"
+                  placeholder="请输入密码"
+                />
+              </el-form-item>
+              <el-row>
+                <el-col :span="12">
+                  <!--            验证码-->
+                  <el-form-item prop="verificationCode">
+                    <el-input
+                      v-model="loginForm.verificationCode"
+                      autocomplete="off"
+                      :prefix-icon="iconList.Magnet"
+                      placeholder="请输入验证码"
+                    />
+                  </el-form-item>
                 </el-col>
-                <!--                忘记密码-->
-                <el-col class="class-forget-password" :span="12">
-                  <el-button type="primary" link>
-                    忘记密码
-                  </el-button>
+                <el-col :span="11" :offset="1">
+                  <!--            验证码-->
+                  <VerificationCode
+                    :refresh-img-code="loginForm.refreshImgCode"
+                    @click="debounceChangeImageCode"
+                    @getCode="backImageCode"
+                  />
                 </el-col>
               </el-row>
-            </el-form-item>
-            <!--        登陆按钮-->
-            <el-form-item>
-              <el-button
-                class="class-button-login" type="primary"
-                @click="debounceClickLogin"
-              >
-                登陆
-              </el-button>
-            </el-form-item>
-          </el-form>
-        </el-col>
-      </el-row>
-    </el-col>
-  </el-row>
-  <!--    系统介绍以及版权所有-->
-  <el-row class="class-introduce-copyright">
-    <el-col class="class-introduce">
-      <span>博函后台管理系统</span>
-    </el-col>
-    <el-col class="class-copyright">
-      <span>版权所有：xxx</span>
-    </el-col>
-  </el-row>
+
+              <!--        注册 忘记密码-->
+              <el-form-item>
+                <el-row class="class-register-forget-password">
+                  <!--                注册-->
+                  <el-col class="class-register" :span="12">
+                    <el-button type="primary" link @click="clickRegister">
+                      注册
+                    </el-button>
+                  </el-col>
+                  <!--                忘记密码-->
+                  <el-col class="class-forget-password" :span="12">
+                    <el-button type="primary" link> 忘记密码 </el-button>
+                  </el-col>
+                </el-row>
+              </el-form-item>
+              <!--        登陆按钮-->
+              <el-form-item>
+                <el-button
+                  class="class-button-login"
+                  type="primary"
+                  @click="debounceClickLogin"
+                >
+                  登陆
+                </el-button>
+              </el-form-item>
+            </el-form>
+          </el-col>
+        </el-row>
+      </div>
+    </el-row>
+    <!--    系统介绍以及版权所有-->
+    <el-row class="class-introduce-copyright">
+      <el-col class="class-introduce">
+        <span>博函后台管理系统</span>
+      </el-col>
+      <el-col class="class-copyright">
+        <span>版权所有：xxx</span>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 
 <script>
@@ -102,23 +110,22 @@ import VerificationCode from "@/components/VerificationCode/index.vue";
 import md5 from "js-md5";
 import { debounce } from "@/tool/debounceAndThrottle";
 import { useRouter } from "vue-router";
-import { useStore } from "vuex"
-
+import { useStore } from "vuex";
 
 export default {
   name: "Login",
   components: {
-    VerificationCode
+    VerificationCode,
   },
   setup() {
     //图标名称
     let iconList = {
       User,
       Lock,
-      Magnet
+      Magnet,
     };
     let router = useRouter();
-    const store = useStore()
+    const store = useStore();
     // form表单绑定的值
     let loginForm = reactive({
       // 账号
@@ -130,7 +137,7 @@ export default {
       // 图片生成的验证码
       imgCode: "",
       // 刷新验证码
-      refreshImgCode: false
+      refreshImgCode: false,
     });
     /**
      * @description: 验证码 自定义验证规则
@@ -154,16 +161,16 @@ export default {
     let rules = reactive({
       // 账号
       accountNumber: [
-        { required: true, message: "请输入账号", trigger: ["blur", "change"] }
+        { required: true, message: "请输入账号", trigger: ["blur", "change"] },
       ],
       // 密码
       password: [
-        { required: true, message: "请输入密码", trigger: ["blur", "change"] }
+        { required: true, message: "请输入密码", trigger: ["blur", "change"] },
       ],
       // 验证码
       verificationCode: [
-        { validator: examineVerificationCode, required: true, trigger: "blur" }
-      ]
+        { validator: examineVerificationCode, required: true, trigger: "blur" },
+      ],
     });
     /**
      * @description: 刷新验证码操作
@@ -192,12 +199,12 @@ export default {
      * @author:hqp
      */
     let clickLogin = () => {
-      console.log('000');
+      console.log("000");
       //通过ref的值触发验证
       loginFormRef.value.validate((valid) => {
         if (valid) {
           console.log(111);
-          store.dispatch("login/signIn",loginForm)
+          store.dispatch("login/signIn", loginForm);
           //触发成功验证表单，调用接口；
         } else {
           console.log("未通过");
@@ -210,7 +217,7 @@ export default {
      */
     let debounceClickLogin = debounce(clickLogin, 200);
     let clickRegister = () => {
-      router.push('/register');
+      router.push("/register");
     };
     return {
       loginForm,
@@ -220,13 +227,17 @@ export default {
       backImageCode,
       debounceClickLogin,
       loginFormRef,
-      clickRegister
+      clickRegister,
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.class-login-box {
+  display: flex;
+  flex-direction: column;
+}
 .class-logo-title-parent {
   margin-top: 5%;
   padding-left: 5px;
@@ -300,9 +311,13 @@ export default {
 
 //最下方介绍和版权样式
 .class-introduce-copyright {
-  margin-top: 130px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  .class-introduce, .class-copyright {
+  .class-introduce,
+  .class-copyright {
     font-size: 14px;
     text-align: center;
     color: rgb(158, 158, 158);

@@ -39,14 +39,9 @@
                 </span>
                 <template #dropdown>
                   <el-dropdown-menu>
-                    <el-dropdown-item>Action 1</el-dropdown-item>
-                    <el-dropdown-item>Action 2</el-dropdown-item>
-                    <el-dropdown-item>Action 3</el-dropdown-item>
-                    <el-dropdown-item disabled>
-                      Action 4
-                    </el-dropdown-item>
-                    <el-dropdown-item divided>
-                      Action 5
+                    <el-dropdown-item>个人中心</el-dropdown-item>
+                    <el-dropdown-item divided @click="logOut">
+                      退出登陆
                     </el-dropdown-item>
                   </el-dropdown-menu>
                 </template>
@@ -127,6 +122,7 @@ import { ArrowDown } from "@element-plus/icons-vue";
 import Menu from "@components/Menu/index.vue";
 import { reactive, onMounted, computed, ref, nextTick } from "vue";
 import { useStore } from "vuex";
+import router from "@/router";
 
 const store = useStore();
 
@@ -257,6 +253,16 @@ let clickMenuCollapsesExpands = () => {
   calculateWidthMenuClose();
 };
 
+/**
+* @description: 退出登陆
+* @param {type}
+* @author:hqp
+* @return:
+* @example：
+*/
+let logOut = ()=>{
+  router.push('/')
+}
 onMounted(() => {
   calculateWidthMenuOpen();
 });
