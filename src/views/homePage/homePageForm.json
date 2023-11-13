@@ -1,0 +1,903 @@
+{
+  "homePageForm": {
+    "formName": "ruleForm",
+    "size": "default",
+    "formList": [{
+        "code": "a",
+        "name": "formComponentTitle",
+        "mold": 3
+      },
+      {
+        "code": "a",
+        "name": "输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "b",
+        "name": "密码输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "password",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "c",
+        "name": "有开头图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "prefixIcon": "Search"
+      },
+      {
+        "code": "d",
+        "name": "有尾部图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "suffixIcon": "Search"
+      },
+      {
+        "code": "e",
+        "name": "自定义头部图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "whetherUseCustomPrefixIcon": true,
+        "customIcon": "元"
+      },
+      {
+        "code": "f",
+        "name": "自定义尾部图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "whetherUseCustomSuffixIcon": true,
+        "customIcon": "元"
+      },
+      {
+        "code": "g",
+        "name": "金额输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "amountVerification": true
+      },
+      {
+        "code": "h",
+        "name": "自定义可输入小数位数金额输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "amountVerification": true,
+        "decimalDigits": 4
+      },
+      {
+        "code": "i",
+        "name": "可输入负数金额输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "amountVerification": true,
+        "negativeNumber": true
+      },
+      {
+        "code": "j",
+        "name": "输入框展示文本",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "div",
+        "textDisplay": true,
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "k",
+        "name": "放大镜",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": false,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "suffixIcon": "Search",
+        "clickToPopUp": true,
+        "magnifyingGlassName": "dialogForm",
+        "isShow": false
+      },
+      {
+        "code": "l",
+        "name": "放大镜图标点击可弹出",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "suffixIcon": "Search",
+        "clickToPopUp": true,
+        "magnifyingGlassName": "dialogForm",
+        "isShow": false,
+        "whetherIconClickable": true
+      },
+      {
+        "code": "m",
+        "name": "文本框",
+        "mold": 1,
+        "maxLength": 100,
+        "placeholder": "请输入",
+        "type": "textarea",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "labelWidth": "120px",
+        "rows": 2
+      },
+      {
+        "code": "n",
+        "name": "下拉框",
+        "mold": 1,
+        "placeholder": "请输入",
+        "domType": "el-select",
+        "clearable": true,
+        "optionList": [{
+            "codeDesc": "部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "部门3",
+            "codeValue": "3"
+          }
+        ],
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "o",
+        "name": "可搜索下拉框",
+        "mold": 1,
+        "placeholder": "请输入",
+        "domType": "el-select",
+        "clearable": true,
+        "optionList": [{
+            "codeDesc": "部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "部门3",
+            "codeValue": "3"
+          }
+        ],
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "filterable": true
+      },
+      {
+        "code": "p",
+        "name": "多选下拉框",
+        "mold": 1,
+        "placeholder": "请输入",
+        "domType": "el-select",
+        "clearable": true,
+        "optionList": [{
+            "codeDesc": "部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "部门3",
+            "codeValue": "3"
+          }
+        ],
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "multiple": true
+      },
+      {
+        "code": "q",
+        "name": "多选限制选中个数下拉框",
+        "mold": 1,
+        "placeholder": "请输入",
+        "domType": "el-select",
+        "clearable": true,
+        "lineHeight": true,
+        "optionList": [{
+            "codeDesc": "部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "部门3",
+            "codeValue": "3"
+          }
+        ],
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "multiple": true,
+        "multipleLimit": 2
+      },
+      {
+        "code": "r",
+        "name": "多选合并成一段文字下拉框",
+        "mold": 1,
+        "placeholder": "请输入",
+        "domType": "el-select",
+        "clearable": true,
+        "lineHeight": true,
+        "optionList": [{
+            "codeDesc": "部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "部门3",
+            "codeValue": "3"
+          }
+        ],
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "multiple": true,
+        "collapseTags": true
+      },
+      {
+        "code": "s",
+        "name": "时间选择器",
+        "mold": 1,
+        "placeholder": "请选择",
+        "domType": "el-time-picker",
+        "clearable": true,
+        "width": 8,
+        "format": "HH:mm:ss",
+        "valueFormat": "HH:mm:ss",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "t",
+        "name": "范围时间选择器",
+        "mold": 1,
+        "startPlaceholder": "",
+        "endPlaceholder": "",
+        "domType": "el-time-picker",
+        "clearable": true,
+        "width": 8,
+        "format": "HH:mm:ss",
+        "valueFormat": "HH:mm:ss",
+        "labelWidth": "120px",
+        "range": true
+      },
+      {
+        "code": "u",
+        "name": "日期选择器",
+        "mold": 1,
+        "placeholder": "请选择",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "type": "date",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "v",
+        "name": "月份日期选择器",
+        "mold": 1,
+        "placeholder": "请选择",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "type": "month",
+        "width": 8,
+        "format": "YYYY-MM",
+        "valueFormat": "YYYY-MM",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "w",
+        "name": "年日期选择器",
+        "mold": 1,
+        "placeholder": "请选择",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "type": "year",
+        "width": 8,
+        "format": "YYYY",
+        "valueFormat": "YYYY",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "x",
+        "name": "限制可选范围日期选择器",
+        "mold": 1,
+        "placeholder": "请选择",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "lineHeight": true,
+        "type": "date",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px",
+        "minDate": "2023-02-09",
+        "maxDate": "2023-02-15"
+      },
+      {
+        "code": "y",
+        "name": "范围日期选择器",
+        "mold": 1,
+        "startPlaceholder": "",
+        "endPlaceholder": "",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "type": "daterange",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px",
+        "rangeSeparator": "至"
+      },
+      {
+        "code": "z",
+        "name": "范围月份日期选择器",
+        "mold": 1,
+        "startPlaceholder": "",
+        "endPlaceholder": "",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "lineHeight": true,
+        "type": "monthrange",
+        "width": 8,
+        "format": "YYYY-MM",
+        "valueFormat": "YYYY-MM",
+        "labelWidth": "120px",
+        "rangeSeparator": "至"
+      },
+      {
+        "code": "b1",
+        "name": "范围限制可选范围日期选择器",
+        "mold": 1,
+        "startPlaceholder": "",
+        "endPlaceholder": "",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "lineHeight": true,
+        "type": "daterange",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px",
+        "minDate": "2023-02-09",
+        "maxDate": "2023-02-15",
+        "rangeSeparator": "至"
+      },
+      {
+        "mold": 4,
+        "width": 8,
+        "labelWidth": "0px",
+        "btnList": [{
+            "icon": "",
+            "type": "primary",
+            "name": "注册",
+            "code": "submit",
+            "plain": false,
+            "round": false
+          },
+          {
+            "icon": "",
+            "type": "",
+            "name": "重置",
+            "code": "empty",
+            "plain": false,
+            "round": false
+          },
+          {
+            "icon": "",
+            "type": "",
+            "name": "返回",
+            "code": "back",
+            "plain": false,
+            "round": false
+          }
+        ]
+      },
+      {
+        "code": "c1",
+        "name": "开关",
+        "domType": "el-switch",
+        "mold": 1,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "d1",
+        "name": "多选",
+        "domType": "el-checkbox-group",
+        "multiOptionList": [{
+            "label": "多选项1"
+          },
+          {
+            "label": "多选项2"
+          },
+          {
+            "label": "多选项3"
+          }
+        ],
+        "mold": 1,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "e1",
+        "name": "单选",
+        "domType": "el-radio-group",
+        "singleOptionList": [{
+            "label": "单选项1"
+          },
+          {
+            "label": "单选项2"
+          },
+          {
+            "label": "单选项3"
+          }
+        ],
+        "mold": 1,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "f1",
+        "name": "附件",
+        "mold": 2,
+        "uploadActions": "/filesystem/ecmsFtsService/ftps/uploadFile",
+        "isShowUploadButton": true,
+        "uploadButtonName": "上传",
+        "fileList": [],
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "g1",
+        "name": "附件",
+        "mold": 2,
+        "uploadActions": "/filesystem/ecmsFtsService/ftps/uploadFile",
+        "isShowUploadButton": true,
+        "uploadButtonName": "上传",
+        "buttonSize": "small",
+        "fileList": [],
+        "width": 8,
+        "labelWidth": "120px"
+      }
+    ],
+    "formData": {
+      "a": "",
+      "b": "",
+      "c": "",
+      "d": "",
+      "e": "",
+      "f": "",
+      "g": "",
+      "h": "",
+      "i": "",
+      "j": "123",
+      "k": "456789",
+      "l": "",
+      "m": "",
+      "n": "",
+      "o": "",
+      "p": [],
+      "q": [],
+      "r": [],
+      "s": "",
+      "t": "",
+      "u": "",
+      "v": "",
+      "w": "",
+      "x": "",
+      "y": "",
+      "z": "",
+      "a1": "",
+      "b1": "",
+      "c1": "",
+      "d1": [],
+      "e1": "",
+      "f1": "",
+      "g1": ""
+    },
+    "btnList": [{
+        "icon": "",
+        "type": "primary",
+        "name": "注册",
+        "code": "submit",
+        "plain": false,
+        "round": false
+      },
+      {
+        "icon": "",
+        "type": "",
+        "name": "重置",
+        "code": "empty",
+        "plain": false,
+        "round": false
+      },
+      {
+        "icon": "",
+        "type": "",
+        "name": "返回",
+        "code": "back",
+        "plain": false,
+        "round": false
+      }
+    ],
+    "styleData": {
+      "position": "right",
+      "width": "100%",
+      "btnType": "center bottom",
+      "inputSelectWidth": "100%"
+    },
+    "rules": {
+      "a": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "b": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "c": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "d": [{
+        "type": "email",
+        "required": true,
+        "message": "请填写正确的邮箱地址",
+        "trigger": "blur"
+      }],
+      "e": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }]
+    }
+  },
+  "homePageTable": {
+    "tableHeight": "80%",
+    "tableData": [],
+    "tableButtonList": [{
+      "code": "add",
+      "name": "新增"
+    }],
+    "tableOption": {
+      "label": "操作",
+      "width": 220,
+      "fixed": "right",
+      "options": [
+        {
+          "label": "修改"
+        },{
+          "label": "删除"
+        }
+      ]
+    },
+    "isShowQueryTermsButton":true,
+    "queryTermsButton": {
+      "isShowRevealingButton":true,
+      "isShowRefreshButton":true,
+      "isShowRevealingSearchButton":true
+    },
+    "unit": "1",
+    "isShowUnitHandoff": true,
+    "unitHandoffOptions": [{
+      "code": "1",
+      "value": "元"
+    }, {
+      "code": "2",
+      "value": "万元"
+    }],
+    "tableHeader": [{
+      "label": "用户名称",
+      "prop": "userName",
+      "width": 220
+    }, {
+      "label": "用户昵称",
+      "prop": "userNickname",
+      "columnType": "input",
+      "width": 220
+    }, {
+      "label": "手机号",
+      "prop": "mobilePhoneNumber",
+      "width": 220
+    }, {
+      "label": "邮箱",
+      "prop": "email",
+      "width": 220
+    }, {
+      "label": "是否启用",
+      "prop": "whetherItIsEnabledName",
+      "width": 220
+    },{
+      "label": "是否开启",
+      "prop": "whetherOpen",
+      "columnType": "switch",
+      "width": 220
+    }, {
+      "label": "创建时间",
+      "prop": "creationTime"
+    }],
+    "pager": {
+      "pageSize": 10,
+      "currentPage": 1,
+      "total": 0,
+      "pageSizes": [10, 50, 100]
+    }
+  },
+  "queryConditionForm": {
+    "formName": "queryConditionForm",
+    "size": "default",
+    "formList": [
+      {
+        "code": "a",
+        "name": "输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "b",
+        "name": "密码输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "password",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "c",
+        "name": "有开头图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "prefixIcon": "Search"
+      },
+      {
+        "code": "d",
+        "name": "有尾部图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "suffixIcon": "Search"
+      },
+      {
+        "code": "e",
+        "name": "自定义头部图标输入框",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "whetherUseCustomPrefixIcon": true,
+        "customIcon": "元"
+      },{
+        "code": "f",
+        "name": "自定义头部图标输入框f",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "whetherUseCustomPrefixIcon": true,
+        "customIcon": "元"
+      },{
+        "code": "g",
+        "name": "自定义头部图标输入框g",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px",
+        "whetherUseCustomPrefixIcon": true,
+        "customIcon": "元"
+      },
+      {
+        "mold": 4,
+        "width": 8,
+        "labelWidth": "0px",
+        "btnList": [{
+            "icon": "",
+            "type": "primary",
+            "name": "查询",
+            "code": "submit",
+            "plain": false,
+            "round": false
+          },
+          {
+            "icon": "",
+            "type": "",
+            "name": "重置",
+            "code": "empty",
+            "plain": false,
+            "round": false
+          }
+        ]
+      }
+    ],
+    "formData": {
+      "a": "",
+      "b": "",
+      "c": "",
+      "d": "",
+      "e": "",
+      "f": "",
+      "g": ""
+    },
+    "btnList": [],
+    "styleData": {
+      "position": "right",
+      "width": "100%",
+      "btnType": "center bottom",
+      "inputSelectWidth": "100%"
+    },
+    "rules": {
+      "a": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "b": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "c": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "d": [{
+        "type": "email",
+        "required": true,
+        "message": "请填写正确的邮箱地址",
+        "trigger": "blur"
+      }],
+      "e": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }]
+    }
+  }
+}

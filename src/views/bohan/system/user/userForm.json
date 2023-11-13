@@ -1,0 +1,263 @@
+{
+  "userTable": {
+    "tableHeight": "80%",
+    "tableData": [],
+    "tableButtonList": [{
+      "code": "add",
+      "name": "新增",
+      "icon": "Plus",
+      "color": "#409EFF",
+      "isDisabled": false
+    },{
+      "code": "edit",
+      "name": "修改",
+      "icon": "Edit",
+      "color": "#67C23A",
+      "isDisabled": false
+    },{
+      "code": "delete",
+      "name": "删除",
+      "icon": "Delete",
+      "color": "#F56C6C",
+      "isDisabled": false
+    }],
+    "isShowQueryTermsButton":true,
+    "queryTermsButton": {
+      "isShowRevealingButton":true,
+      "isShowRefreshButton":true,
+      "isShowRevealingSearchButton":true
+    },
+    "unit": "1",
+    "isShowUnitHandoff": true,
+    "unitHandoffOptions": [{
+      "code": "1",
+      "value": "元"
+    }, {
+      "code": "2",
+      "value": "万元"
+    }],
+    "tableHeader": [{
+      "label": "用户名称",
+      "prop": "userName",
+      "width": 220
+    }, {
+      "label": "用户昵称",
+      "prop": "nickName",
+      "columnType": "input",
+      "width": 220
+    }, {
+      "label": "手机号",
+      "prop": "mobilePhoneNumber",
+      "width": 220
+    }, {
+      "label": "邮箱",
+      "prop": "email",
+      "width": 220
+    }, {
+      "label": "是否启用",
+      "prop": "whetherEnabledName",
+      "width": 220
+    },{
+      "label": "是否开启",
+      "prop": "whetherOpen",
+      "columnType": "switch",
+      "width": 220
+    }, {
+      "label": "创建时间",
+      "prop": "creationTime"
+    },{
+      "label": "修改时间",
+      "prop": "editTime"
+    }],
+    "pager": {
+      "pageSize": 10,
+      "currentPage": 1,
+      "total": 0,
+      "pageSizes": [10, 50, 100]
+    }
+  },
+  "queryConditionForm": {
+    "formName": "queryConditionForm",
+    "size": "default",
+    "formList": [
+      {
+        "code": "userName",
+        "name": "用户名称",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "nickName",
+        "name": "用户昵称",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "mobilePhoneNumber",
+        "name": "手机号",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": false,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "email",
+        "name": "邮箱",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "lineHeight": false,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "whetherEnabledName",
+        "name": "是否启用",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-select",
+        "optionList": [{
+          "codeDesc": "是",
+          "codeValue": "1"
+        },
+          {
+            "codeDesc": "否",
+            "codeValue": "0"
+          }
+        ],
+        "clearable": true,
+        "lineHeight": false,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },{
+        "code": "whetherOpen",
+        "name": "是否开启",
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-select",
+        "optionList": [{
+          "codeDesc": "是",
+          "codeValue": "1"
+        },
+          {
+            "codeDesc": "否",
+            "codeValue": "0"
+          }
+        ],
+        "clearable": true,
+        "lineHeight": false,
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "creationTime",
+        "name": "创建时间",
+        "mold": 1,
+        "placeholder": "请选择",
+        "domType": "el-date-picker",
+        "clearable": true,
+        "type": "date",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px"
+      },
+      {
+        "mold": 4,
+        "width": 8,
+        "labelWidth": "0px",
+        "btnList": [{
+            "icon": "",
+            "type": "primary",
+            "name": "查询",
+            "code": "submit",
+            "plain": false,
+            "round": false
+          },
+          {
+            "icon": "",
+            "type": "",
+            "name": "重置",
+            "code": "empty",
+            "plain": false,
+            "round": false
+          }
+        ]
+      }
+    ],
+    "formData": {
+      "userName": "",
+      "nickName": "",
+      "mobilePhoneNumber": "",
+      "email": "",
+      "whetherEnabledName": "",
+      "whetherOpen": "",
+      "creationTime": ""
+    },
+    "btnList": [],
+    "styleData": {
+      "position": "right",
+      "width": "100%",
+      "btnType": "center bottom",
+      "inputSelectWidth": "100%"
+    },
+    "rules": {
+      "a": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "b": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "c": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }],
+      "d": [{
+        "type": "email",
+        "required": true,
+        "message": "请填写正确的邮箱地址",
+        "trigger": "blur"
+      }],
+      "e": [{
+        "required": true,
+        "message": "必填项不能为空",
+        "trigger": "blur"
+      }]
+    }
+  }
+}

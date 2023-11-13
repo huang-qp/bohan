@@ -1,0 +1,352 @@
+{
+  "listForm": {
+    "formName":"ruleForm",
+    "formList": [
+      {
+        "code": "a",
+        "name": "表单组件具名插槽",
+        "mold": 3
+      },
+      {
+        "code": "a",
+        "name": "组件合同编号",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "prefixIcon": "",
+        "suffixIcon": "",
+        "whetherToUseACustomIcon": true,
+        "customIcon": "元",
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "o",
+        "name": "输入金额校验",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "prefixIcon": "",
+        "suffixIcon": "",
+        "amountVerification": true,
+        "decimalDigits": 2,
+        "negativeNumber": false,
+        "whetherToUseACustomIcon": true,
+        "customIcon": "元",
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "b",
+        "name": "组件文本展示",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "div",
+        "textDisplay":true,
+        "clearable": true,
+        "rows": 1,
+        "prefixIcon": "",
+        "suffixIcon": "",
+        "whetherToUseACustomIcon": true,
+        "customIcon": "元",
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "c",
+        "name": "组件放大镜",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clickToPopUp": true,
+        "magnifyingGlassName":"DialogForm",
+        "isShow":false,
+        "clearable": true,
+        "rows": 1,
+        "prefixIcon": "",
+        "suffixIcon": "el-icon-search",
+        "whetherIconClickable": true,
+        "whetherToUseACustomIcon": false,
+        "customIcon": "",
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "d",
+        "name": "组件放大镜2",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clickToPopUp": true,
+        "magnifyingGlassName":"DialogForm",
+        "isShow":false,
+        "clearable": true,
+        "rows": 1,
+        "prefixIcon": "",
+        "suffixIcon": "el-icon-search",
+        "whetherIconClickable": true,
+        "whetherToUseACustomIcon": false,
+        "customIcon": "",
+        "width": 8,
+        "offsetWidth": 0,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "e",
+        "name": "组件部门多选",
+        "disabled": false,
+        "mold": 1,
+        "multiple": true,
+        "collapseTags":true,
+        "clearable": true,
+        "collapse": false,
+        "placeholder": "请选择",
+        "domType": "el-select",
+        "filterable": false,
+        "optionList": [
+          {
+            "codeDesc": "组件部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "组件部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "组件部门3",
+            "codeValue": "3"
+          }
+        ],
+        "multipleLimit": 0,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "f",
+        "name": "组件部门单选",
+        "disabled": false,
+        "multiple": false,
+        "clearable": true,
+        "collapse": false,
+        "placeholder": "请选择",
+        "domType": "el-select",
+        "filterable": false,
+        "mold": 1,
+        "optionList": [
+          {
+            "codeDesc": "组件部门1",
+            "codeValue": "1"
+          },
+          {
+            "codeDesc": "组件部门2",
+            "codeValue": "2"
+          },
+          {
+            "codeDesc": "组件部门3",
+            "codeValue": "3"
+          }
+        ],
+        "multipleLimit": 0,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "g",
+        "name": "组件时间",
+        "disabled": false,
+        "clearable": true,
+        "placeholder": "请选择",
+        "domType": "el-time-picker",
+        "mold": 1,
+        "width": 8,
+        "range": false,
+        "format": "HH:mm:ss",
+        "valueFormat": "HH:mm:ss",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "h",
+        "name": "组件日期",
+        "disabled": false,
+        "clearable": true,
+        "placeholder": "请选择",
+        "domType": "el-date-picker",
+        "minDate": "2023-02-09",
+        "maxDate": "2023-02-15",
+        "mold": 1,
+        "type": "date",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "i",
+        "name": "组件范围日期",
+        "disabled": false,
+        "clearable": true,
+        "placeholder": "请选择",
+        "startPlaceholder": "",
+        "endPlaceholder": "",
+        "rangeSeparator": "至",
+        "domType": "el-date-picker",
+        "mold": 1,
+        "type": "daterange",
+        "width": 8,
+        "format": "YYYY-MM-DD",
+        "valueFormat": "YYYY-MM-DD",
+        "labelWidth": "120px"
+      },
+      {
+        "code": "j",
+        "name": "组件开关",
+        "disabled": false,
+        "domType": "el-switch",
+        "mold": 1,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "k",
+        "name": "组件文本框",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": 100,
+        "placeholder": "请输入",
+        "type": "textarea",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 2,
+        "prefixIcon": "",
+        "suffixIcon": "",
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "l",
+        "name": "多选",
+        "disabled": false,
+        "domType": "el-checkbox-group",
+        "multiOptionList": [
+          {
+            "label": "多选项1"
+          },
+          {
+            "label": "多选项2"
+          },
+          {
+            "label": "多选项3"
+          }
+        ],
+        "mold": 1,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "m",
+        "name": "组件单选",
+        "disabled": false,
+        "domType": "el-radio-group",
+        "singleOptionList": [
+          {
+            "label": "单选项1"
+          },
+          {
+            "label": "单选项2"
+          },
+          {
+            "label": "单选项3"
+          }
+        ],
+        "mold": 1,
+        "width": 8,
+        "labelWidth": "120px"
+      },
+      {
+        "code": "n",
+        "name": "附件",
+        "disabled": false,
+        "mold": 2,
+        "uploadActions": "/filesystem/ecmsFtsService/ftps/uploadFile",
+        "isShowUploadButton": true,
+        "uploadButtonName": "上传",
+        "fileList": [],
+        "width": 24,
+        "labelWidth": "120px"
+      }
+    ],
+    "formData": {
+      "a":"",
+      "b":"3333",
+      "c":"",
+      "d":"",
+      "e":["2","3"],
+      "f":"3",
+      "g":"",
+      "h":"",
+      "i":"",
+      "j":true,
+      "k":"",
+      "l":["多选项3"],
+      "m":"单选项2",
+      "n":"",
+      "o":""
+    },
+    "btnList": [
+      {
+        "icon": "",
+        "type": "primary",
+        "name": "提交",
+        "code": "submit",
+        "plain": false,
+        "round": false
+      },
+      {
+        "icon": "",
+        "type": "",
+        "name": "清空",
+        "code": "empty",
+        "plain": false,
+        "round": false
+      }
+    ],
+    "styleData": {
+      "position": "right",
+      "width": "100%",
+      "btnType": "center bottom",
+      "inputSelectWidth": "100%"
+    },
+    "rules": {
+      "a": [
+        {
+          "required": true,
+          "message": "必填项不能为空",
+          "trigger": "blur"
+        }
+      ]
+    }
+  }
+}

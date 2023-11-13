@@ -1,0 +1,165 @@
+{
+  "listForm": {
+    "formName": "ruleForm",
+    "size": "default",
+    "formList": [
+      {
+        "code": "a",
+        "name": "registerTitle",
+        "mold": 3
+      },
+      {
+        "code": "account",
+        "name": "账号",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "width": 24,
+        "offsetWidth": 0,
+        "labelWidth": "80px"
+      },
+      {
+        "code": "password",
+        "name": "密码",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "password",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "width": 24,
+        "offsetWidth": 0,
+        "labelWidth": "80px"
+      },
+      {
+        "code": "confirmPassword",
+        "name": "确认密码",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "password",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "width": 24,
+        "offsetWidth": 0,
+        "labelWidth": "80px"
+      },
+      {
+        "code": "mailbox",
+        "name": "邮箱",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "width": 24,
+        "offsetWidth": 0,
+        "labelWidth": "80px"
+      },
+      {
+        "code": "mobilePhoneNumber",
+        "name": "手机号",
+        "disabled": false,
+        "mold": 1,
+        "maxLength": -1,
+        "placeholder": "请输入",
+        "type": "text",
+        "domType": "el-input",
+        "clearable": true,
+        "rows": 1,
+        "width": 24,
+        "offsetWidth": 0,
+        "labelWidth": "80px"
+      }
+    ],
+    "formData": {
+      "account": "",
+      "password": "",
+      "confirmPassword": "",
+      "mailbox": "",
+      "mobilePhoneNumber": ""
+    },
+    "btnList": [
+      {
+        "icon": "",
+        "type": "primary",
+        "name": "注册",
+        "code": "submit",
+        "plain": false,
+        "round": false
+      },
+      {
+        "icon": "",
+        "type": "",
+        "name": "重置",
+        "code": "empty",
+        "plain": false,
+        "round": false
+      },
+      {
+        "icon": "",
+        "type": "",
+        "name": "返回",
+        "code": "back",
+        "plain": false,
+        "round": false
+      }
+    ],
+    "styleData": {
+      "position": "right",
+      "width": "100%",
+      "btnType": "center bottom",
+      "inputSelectWidth": "100%"
+    },
+    "rules": {
+      "account": [
+        {
+          "required": true,
+          "message": "必填项不能为空",
+          "trigger": "blur"
+        }
+      ],
+      "password": [
+        {
+          "required": true,
+          "message": "必填项不能为空",
+          "trigger": "blur"
+        }
+      ],
+      "confirmPassword": [
+        {
+          "required": true,
+          "message": "必填项不能为空",
+          "trigger": "blur"
+        }
+      ],
+      "mailbox": [
+        {
+          "type": "email",
+          "required": true,
+          "message": "请填写正确的邮箱地址",
+          "trigger": "blur"
+        }
+      ],
+      "mobilePhoneNumber": [
+        {
+          "required": true,
+          "message": "必填项不能为空",
+          "trigger": "blur"
+        }
+      ]
+    }
+  }
+}
